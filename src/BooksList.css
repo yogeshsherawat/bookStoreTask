@@ -1,0 +1,62 @@
+.book-div {
+  position: relative;
+  margin: 20px auto;
+  width: 70%;
+  border: 1px solid black;
+  padding: 20px;
+}
+
+.book-div .book-title {
+  z-index: 100;
+  text-transform: uppercase;
+  font-size: 25px;
+  color: black;
+  font-weight: 600;
+}
+.book-div .book-desc {
+  margin-top: 20px;
+  color: black;
+  font-weight: 500;
+}
+
+.book-author {
+  color: black;
+}
+
+.book-div button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  width: 150px;
+  height: 40px;
+  background-color: transparent;
+  font-size: 15px;
+  color: black;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.book-div button:hover {
+  background-color: #626363;
+}
+.book-div button:focus {
+  outline: none;
+}
+.book-div button span {
+  margin-right: 10px;
+}
+
+.star-ratings svg {
+  height: 20px !important;
+  width: 20px !important;
+}
+.star-ratings .star-container {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.rating-div {
+  display: flex;
+  align-items: baseline;
+}

@@ -1,0 +1,77 @@
+.loader {
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+.App {
+  position: relative;
+  min-height: 100%;
+  background-image: url("https://images.unsplash.com/photo-1509023464722-18d996393ca8?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1500&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.cart-button {
+  border: none;
+  padding: 10px;
+  background: transparent;
+  font-size: 50px;
+}
+.cart-button:hover {
+  color: white;
+}
+.cart-button:focus {
+  outline: none;
+}
+
+.overlay {
+  z-index: 1;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: black;
+  opacity: 0.6;
+  position: fixed;
+  top: 0;
+}
+
+.sort-div {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+  position: fixed;
+  top: 80px;
+  left: 90%;
+  align-items: center;
+}
+
+.sort-div select {
+  background: transparent;
+  color: black;
+  font-weight: 700;
+  width: 100px;
+  padding: 10px 20px;
+  border: 2px solid black;
+}
+
+.sort-div select:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 937px) {
+  .middle-div {
+    display: flex;
+    flex-direction: column;
+  }
+  .sort-div {
+    margin: 20px 0;
+    position: static;
+  }
+  .sort-div select {
+    width: 130px;
+    text-align: center;
+  }
+}

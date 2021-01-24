@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+.cart {
+  z-index: 1000;
+  width: 60%;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  left: 40%;
+  top: 0;
+  height: 100%;
+}
+.cart .header {
+  padding: 10px 20px 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cart .header .title {
+  margin: 0;
+  padding-left: 45%;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+}
+
+.cart .header .cross {
+  margin: 0;
+  font-weight: 500;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  border: none;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+}
+
+.cart .header .cross:focus {
+  outline: none;
+}
+.cart .cart-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px 20px 20px;
+  padding: 20px 15px;
+  border-bottom: 1px solid white;
+  align-items: center;
+}
+
+.cart .cart-item button {
+  border: none;
+  margin: 0;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+.cart .cart-item:hover {
+  background-color: #077050;
+}
+
+.cart .cart-item button:focus {
+  outline: none;
+}
+.cart .cart-item:hover button {
+  background-color: #077050;
+}
+
+.cart .cart-item .book-icon {
+  color: white;
+  font-size: 30px;
+}
+
+.cart .button-div {
+  display: flex;
+  justify-content: flex-end;
+}
+.cart .button-div button {
+  margin: 20px 0 20px 10px;
+  display: flex;
+}
+
+.cart .button-div button {
+  padding: 15px 20px;
+  font-size: 15px;
+  background-color: black;
+  border-radius: 10px;
+  color: white;
+  transition: 700ms;
+  border: 1px solid white;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.cart .button-div button span {
+  margin-left: 10px;
+}
+.cart .button-div button:focus {
+  outline: none;
+}
+
+.cart .button-div .purchase-button svg {
+  color: blueviolet;
+}
+.cart .button-div .clear-button svg {
+  color: red;
+}
+
+.cart .button-div button:hover {
+  background-color: white;
+  color: black;
+}
+
+.cart .bottom-div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 20px;
+}
+.price-div {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+}
+
+.empty-cart-div {
+  padding: 70px 30px;
+  font-size: 35px;
+  text-align: center;
+  color: rgba(255, 200, 200, 0.75);
+}
+
+@media screen and (max-width: 770px) {
+  .cart {
+    min-width: 100%;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  .overlay {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cart .cart-item {
+    margin: 0 5px 20px 5px;
+    padding: 20px 0px;
+  }
+  .cart .cart-item .book-icon {
+    color: white;
+    font-size: 20px;
+  }
+}
