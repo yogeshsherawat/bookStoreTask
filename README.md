@@ -12,7 +12,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 # Installation on Local Machine
 
 #Clone the repository
-$ git clone https://github.com/ayushi-bhardwaj/react-dashboard.git
+$ git clone https://github.com/yogeshsherawat/bookStoreTask.git
 
 #Change the directory 
 $ cd "react-dashboard"
